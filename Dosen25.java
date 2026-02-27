@@ -1,10 +1,10 @@
 public class Dosen25 {
     String kode;
     String nama;
-    Boolean jenisKelamin;
+    boolean jenisKelamin;
     int usia;
 
-    public Dosen25(String kode, String nama, Boolean jenisKelamin, int usia) {
+    public Dosen25(String kode, String nama, boolean jenisKelamin, int usia) {
         this.kode = kode;
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;

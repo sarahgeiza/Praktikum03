@@ -21,7 +21,7 @@ public class DosenDemo25 {
             String jk = sc.nextLine();
 
             Boolean jenisKelamin;
-            if (jk.equalsIgnoreCase("P")) {
+            if (jk.equalsIgnoreCase("Pria")) {
                 jenisKelamin = true;
             } else {
                 jenisKelamin = false;
@@ -36,10 +36,12 @@ public class DosenDemo25 {
 
         System.out.println("-------------------------------------");
 
-        int no = 1;
-        for (Dosen25 dsn : daftarDosen25) {
-            System.out.println("Data Dosen ke-" + no++);
-            dsn.tampilkanData();
+        DataDosen25 data = new DataDosen25();
+        data.jumlahDosenPerJenisKelamin(daftarDosen25);
+        data.rerataUsiaDosenPerJenisKelamin(daftarDosen25);
+        data.infoDosenPalingTua(daftarDosen25);
+        data.infoDosenPalingMuda(daftarDosen25);
+        data.dataSemuaDosen(daftarDosen25);
         }
     }
-}
+
